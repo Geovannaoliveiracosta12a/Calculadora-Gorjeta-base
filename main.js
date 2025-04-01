@@ -43,7 +43,7 @@ function calculate(){
     if (bill !== 0 && tipPercentage !== 0 && numberOfPeople !== 0){
         let amountStrong = document.querySelector(".amount strong")
         let tipAmountPerson = (bill * tipPercentage) / numberOfPeople
-        amountStrong.innerText = `$0${tipAmountPerson.toFixed(2)}`
+        amountStrong.innerText = `$${tipAmountPerson.toFixed(2)}`
 
         let totalStrong = document.querySelector(".total strong")
         let totalPerson = bill / numberOfPeople + tipAmountPerson
